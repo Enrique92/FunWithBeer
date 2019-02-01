@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".activities.SelectionActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStartTitle"
+        android:layout_marginTop="@dimen/marginTopTitle"
+        android:layout_marginEnd="@dimen/marginEndTitle"
+        android:fontFamily="casual"
+        android:text="@string/show_beers_by"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textTitles"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imgShowBy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imgShowBy"
+        android:layout_width="@dimen/imgWid"
+        android:layout_height="@dimen/imgHei"
+        android:layout_marginStart="@dimen/marginStartTitle"
+        android:layout_marginEnd="@dimen/marginEndTitle"
+        android:layout_marginBottom="@dimen/marginBottomImg"
+        android:background="@drawable/round_corners"
+        android:foregroundGravity="center_vertical"
+        android:onClick="showBeerBy"
+        app:layout_constraintBottom_toTopOf="@+id/returnMenu"
+        app:layout_constraintEnd_toStartOf="@+id/imgRightButtonShowBy"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/imgLeftButtonShowBy"
+        tools:ignore="MissingConstraints"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <ImageButton
+        android:id="@+id/imgLeftButtonShowBy"
+        style="@style/LeftButton"
+        android:layout_width="@dimen/sizeMovWid"
+        android:layout_height="@dimen/sizeMovHe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/marginStartMove"
+        android:layout_marginTop="@dimen/marginTopMove"
+        android:onClick="moveLeft"
+        app:layout_constraintBottom_toTopOf="@+id/imgShowBy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imgRightButtonShowBy"
+        style="@style/RightButton"
+        android:layout_width="@dimen/sizeMovWid"
+        android:layout_height="@dimen/sizeMovHe"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/marginTopMove"
+        android:layout_marginEnd="@dimen/marginEndMove"
+        android:onClick="moveRight"
+        app:layout_constraintBottom_toTopOf="@+id/imgShowBy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/selectionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStartTitle"
+        android:layout_marginTop="@dimen/marginTopText"
+        android:layout_marginEnd="@dimen/marginEndTitle"
+        android:fontFamily="casual"
+        android:text="Continent"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSizeType"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imgShowBy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.595" />
+
+    <Button
+        android:id="@+id/returnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightButtonBack"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/buttonBackStart"
+        android:layout_marginEnd="@dimen/buttonBackEnd"
+        android:layout_marginBottom="@dimen/buttonBackBottom"
+        android:background="@drawable/my_button_bg"
+        android:drawableLeft="@drawable/ic_return"
+        android:fontFamily="casual"
+        android:onClick="returnMenu"
+        android:padding="@dimen/paddingButtonsMain"
+        android:text="@string/textBack"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

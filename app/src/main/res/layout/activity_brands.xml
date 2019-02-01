@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".activities.BrandActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStartTitle"
+        android:layout_marginTop="@dimen/marginTopTitle"
+        android:layout_marginEnd="@dimen/marginEndTitle"
+        android:fontFamily="casual"
+        android:text="@string/brands"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textTitleSizeBrands"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageBrand"
+        android:layout_width="@dimen/widthImgBrand"
+        android:layout_height="@dimen/heightImgBrand"
+        android:layout_marginStart="@dimen/marginImgStartBrand"
+        android:layout_marginTop="@dimen/marginImgTopBrand"
+        android:layout_marginEnd="@dimen/marginImgEndBrand"
+        android:src="@drawable/heinekenbrand"
+        app:layout_constraintEnd_toStartOf="@+id/imgRightButtonCont"
+        app:layout_constraintStart_toEndOf="@+id/imgLeftButtonCont"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <ImageButton
+        android:id="@+id/imgLeftButtonCont"
+        style="@style/LeftButton"
+        android:layout_width="@dimen/sizeMovWid"
+        android:layout_height="@dimen/sizeMovHe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/marginStartBrandMov"
+        android:layout_marginTop="@dimen/marginTopBrandMov"
+        android:onClick="moveLeft"
+        app:layout_constraintBottom_toTopOf="@+id/imageBrand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imgRightButtonCont"
+        style="@style/RightButton"
+        android:layout_width="@dimen/sizeMovWid"
+        android:layout_height="@dimen/sizeMovHe"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/marginTopBrandMov"
+        android:layout_marginEnd="@dimen/marginEndBrandMov"
+        android:onClick="moveRight"
+        app:layout_constraintBottom_toTopOf="@+id/imageBrand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/nameBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/nameBrandMarginStart"
+        android:layout_marginEnd="@dimen/nameBrandMarginEnd"
+        android:layout_marginTop="@dimen/nameBrandMarginTop"
+        android:fontFamily="casual"
+        android:text="NAME -> Heineken"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sizeTextBrands"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imgRightButtonCont"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/imgLeftButtonCont"
+        app:layout_constraintTop_toBottomOf="@+id/imageBrand" />
+
+    <TextView
+        android:id="@+id/yearBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/nameBrandMarginStart"
+        android:layout_marginEnd="@dimen/nameBrandMarginEnd"
+        android:fontFamily="casual"
+        android:text="FOUNDED -> 1864"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sizeTextBrands"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imgRightButtonCont"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toEndOf="@+id/imgLeftButtonCont"
+        app:layout_constraintTop_toBottomOf="@+id/nameBrand" />
+
+    <TextView
+        android:id="@+id/countryBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/nameBrandMarginStart"
+        android:layout_marginEnd="@dimen/nameBrandMarginEnd"
+        android:fontFamily="casual"
+        android:text="COUNTRY -> Netherlands"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sizeTextBrands"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imgRightButtonCont"
+        app:layout_constraintStart_toEndOf="@+id/imgLeftButtonCont"
+        app:layout_constraintTop_toBottomOf="@+id/yearBrand" />
+
+    <ScrollView
+        android:id="@+id/scrollViewDescBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightDescBrands"
+        android:layout_marginStart="@dimen/nameBrandMarginStart"
+        android:layout_marginEnd="@dimen/nameBrandMarginEnd"
+        android:padding="@dimen/paddingScrollViewBrands"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countryBrand">
+
+        <TextView
+            android:id="@+id/descBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/descMarginStart"
+            android:layout_marginTop="@dimen/descMarginTop"
+            android:layout_marginEnd="@dimen/descMarginEnd"
+            android:fontFamily="casual"
+            android:justificationMode="inter_word"
+            android:paddingLeft="@dimen/descPaddingLeft"
+            android:paddingTop="@dimen/descPaddingTop"
+            android:paddingRight="@dimen/descPaddingRight"
+            android:paddingBottom="@dimen/descPaddingBottom"
+            android:text="@string/descriptionbrewery"
+            android:textColor="@color/black"
+            android:textSize="@dimen/descSizeText"
+            app:layout_constraintEnd_toStartOf="@+id/imgRightButtonCont"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toEndOf="@+id/imgLeftButtonCont"
+            app:layout_constraintTop_toBottomOf="@+id/countryBrand" />
+
+    </ScrollView>
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="@dimen/widthMap"
+        android:layout_height="@dimen/heightMap"
+        android:layout_marginStart="@dimen/marginStartMap"
+        android:layout_marginTop="@dimen/marginTopMap"
+        android:layout_marginEnd="@dimen/marginEndMap"
+        android:layout_marginBottom="@dimen/marginBottomMap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewDescBrand"
+        tools:context="com.example.mapwithmarker.BrandsActivity" />
+
+
+    <ImageButton
+        android:id="@+id/returnMainMenu"
+        style="@style/RetButton"
+        android:layout_width="@dimen/widthRetArrow"
+        android:layout_height="@dimen/heightRetArrow"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/marginStartRetArrow"
+        android:layout_marginTop="@dimen/marginTopRetArrow"
+        android:layout_marginEnd="@dimen/marginEndRetArrow"
+        android:fontFamily="casual"
+        android:onClick="returnMenu"
+        android:padding="@dimen/paddingRetArrow"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/title"
+        app:layout_constraintEnd_toStartOf="@+id/title"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

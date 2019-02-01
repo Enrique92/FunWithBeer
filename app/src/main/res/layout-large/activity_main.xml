@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainMenuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/marginTopTextsMain"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="casual"
+        android:text="@string/title"
+        android:textColor="@color/yellowgold"
+        android:textSize="@dimen/textfunwithbeer"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/enjoy" />
+
+    <Button
+        android:id="@+id/enjoy"
+        android:layout_width="@dimen/widthbuttonsMain"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/marginTopMainFirst"
+        android:background="@drawable/my_button_bg"
+        android:drawableLeft="@drawable/ic_fun"
+        android:fontFamily="casual"
+        android:onClick="showBeersBy"
+        android:padding="@dimen/paddingButtonsMain"
+        android:text="@string/textEnjoy"
+        android:textSize="@dimen/textButtonsMain"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/breweries"
+        android:layout_width="@dimen/widthbuttonsMain"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/marginTopMain"
+        android:background="@drawable/my_button_bg"
+        android:drawableLeft="@drawable/ic_breweries"
+        android:fontFamily="casual"
+        android:onClick="showBrands"
+        android:padding="@dimen/paddingButtonsMain"
+        android:text="@string/breweries"
+        android:textSize="@dimen/textButtonsMain"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/aboutIt"
+        android:layout_width="@dimen/widthbuttonsMain"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/marginTopMain"
+        android:background="@drawable/my_button_bg"
+        android:drawableLeft="@drawable/ic_information"
+        android:fontFamily="casual"
+        android:onClick="aboutIt"
+        android:padding="@dimen/paddingButtonsMain"
+        android:text="@string/textAboutIt"
+        android:textSize="@dimen/textButtonsMain"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="@dimen/widthbuttonsMain"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/marginTopMain"
+        android:layout_marginBottom="@dimen/marginBottomMainLast"
+        android:background="@drawable/my_button_bg"
+        android:drawableLeft="@drawable/ic_exit"
+        android:fontFamily="casual"
+        android:onClick="exitApp"
+        android:padding="@dimen/paddingButtonsMain"
+        android:text="@string/textExit"
+        android:textSize="@dimen/textButtonsMain"
+
+        android:textStyle="bold" />
+</LinearLayout>

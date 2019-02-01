@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">FunWithBeers</string>
+    <string name="title">FUN WITH BEER</string>
+    <string name="textEnjoy">Let\'s Enjoy</string>
+    <string name="textExit">Exit</string>
+    <string name="textAboutIt">About It</string>
+    <string name="title_activity_country">CountryActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="desc_about_app">This is a app that provide to you information about the different types of beers of each country.
+                                  You can view the beer from different forms, you can see by type of beer or you can see by continent.
+                                  The app tell you about the name, which beer is it, the degrees of it, in which cities is more common
+                                  and a short description. After that, you can select the score of each beer you tried.
+                                  This score is save in the case you want to try again, you can remember how it was.
+                                  Also the app have the information about the most famous brands of beer around the world
+                                  and a short description and their location in the case you want to see the main company.</string>
+    <string name="text_main_menu">Main Menu</string>
+    <string name="country">SELECT A COUNTRY</string>
+    <string name="textContinent">SELECT A CONTINENT</string>
+    <string name="textBack">BACK</string>
+    <string name="breweries">Brands</string>
+    <string name="description">Using crystal clear water, the finest hops and Canadian-grown malted barley, Molson slowly ferments each brew to produce a smooth, refreshing beer with genuine Canadian taste.</string>
+    <string name="title_activity_brewery">BreweryActivity</string>
+    <string name="descriptionbrewery">It is a Dutch brewing company, founded in 1864 by Gerard Adriaan Heineken in Amsterdam. As of 2017, Heineken owns over 165 breweries in more than 70 countries. It produces 250 international, regional, local and speciality beers and ciders and employs approximately 73,000 people.</string>
+    <string name="brands"> BRANDS </string>
+    <string name="google_maps_key">AIzaSyDiK-hBRHKdyzcNlY8ZawXG7A5HLymVicI</string>
+    <string name="show_beers_by">SHOW BEERS BY</string>
+</resources>

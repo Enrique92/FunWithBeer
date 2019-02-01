@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/type_continents_0"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_1"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_2"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_3"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_4"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_5"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_6"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_7"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_8"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_9"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_10"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_11"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_12"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_13"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_14"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_15"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_16"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_17"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_18"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_19"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_20"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_21"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_22"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_23"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_24"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_25"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_26"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_27"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_28"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_29"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_30"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_31"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_32"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/type_continents_33"
+        android:duration="100" />
+
+</animation-list>

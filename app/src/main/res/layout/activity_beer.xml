@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".activities.BeerActivity">
+
+    <ImageButton
+        android:id="@+id/imageBeer"
+        android:layout_width="@dimen/widthImgBeer"
+        android:layout_height="@dimen/heightImgBeer"
+        android:layout_marginStart="@dimen/marginStartTitle"
+        android:layout_marginTop="@dimen/marginTopTitle"
+        android:layout_marginEnd="@dimen/marginEndTitle"
+        android:background="@color/colorBackground"
+        android:src="@drawable/molson"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imgLeftButton"
+        style="@style/LeftButton"
+        android:layout_width="@dimen/sizeMovWid"
+        android:layout_height="@dimen/sizeMovHe"
+        android:layout_marginStart="@dimen/marginStartMove"
+        android:layout_marginTop="@dimen/marginTopMoveBeers"
+        android:onClick="moveLeft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBeer"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imgRightButton"
+        style="@style/RightButton"
+        android:layout_width="@dimen/sizeMovWid"
+        android:layout_height="@dimen/sizeMovHe"
+        android:layout_marginTop="@dimen/marginTopMoveBeers"
+        android:layout_marginEnd="@dimen/marginEndMove"
+        android:onClick="moveRight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBeer"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/beerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/marginsBeer"
+        android:layout_marginTop="@dimen/marginsBeer"
+        android:layout_marginEnd="@dimen/marginsBeer"
+        android:fontFamily="casual"
+        android:text="NAME -> Molson Lager"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sizeTextBrands"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/beerType"
+        app:layout_constraintEnd_toStartOf="@+id/imgRightButton"
+        app:layout_constraintStart_toEndOf="@+id/imgLeftButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageBeer" />
+
+    <TextView
+        android:id="@+id/beerType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginsBeer"
+        android:layout_marginTop="@dimen/marginTopBeersFields"
+        android:layout_marginEnd="@dimen/marginsBeer"
+        android:fontFamily="casual"
+        android:text="TYPE -> Lager"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sizeTextBrands"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imgRightButton"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/imgLeftButton"
+        app:layout_constraintTop_toBottomOf="@+id/beerName" />
+
+    <TextView
+        android:id="@+id/beerCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="@dimen/marginsBeer"
+        android:layout_marginTop="@dimen/marginTopBeersFields"
+        android:layout_marginEnd="@dimen/marginsBeer"
+        android:fontFamily="casual"
+        android:text="COUNTRY -> Canada"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sizeTextBrands"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imgRightButton"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toEndOf="@+id/imgLeftButton"
+        app:layout_constraintTop_toBottomOf="@+id/beerType" />
+
+    <TextView
+        android:id="@+id/beerABV"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="@dimen/marginsBeer"
+        android:layout_marginTop="@dimen/marginTopBeersFields"
+        android:layout_marginEnd="@dimen/marginsBeer"
+        android:fontFamily="casual"
+        android:text="ABV -> 4.1%"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sizeTextBrands"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imgRightButton"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/imgLeftButton"
+        app:layout_constraintTop_toBottomOf="@+id/beerCountry" />
+
+    <ScrollView
+        android:id="@+id/scrollViewDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightScrollViewDescBeers"
+        android:layout_marginStart="@dimen/marginsBeer"
+        android:layout_marginEnd="@dimen/marginsBeer"
+        android:padding="@dimen/paddingScrollViewBrands"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beerABV">
+
+        <TextView
+            android:id="@+id/beerDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/marginsBeer"
+            android:layout_marginTop="@dimen/marginsBeer"
+            android:layout_marginEnd="@dimen/marginsBeer"
+            android:fontFamily="casual"
+            android:justificationMode="inter_word"
+            android:padding="@dimen/paddingDescBeers"
+            android:text="@string/description"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sizeTextDescBeers"
+            app:layout_constraintBottom_toTopOf="@+id/ratingBeer"
+            app:layout_constraintEnd_toStartOf="@+id/imgRightButton"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toEndOf="@+id/imgLeftButton"
+            app:layout_constraintTop_toBottomOf="@+id/beerABV"
+            app:layout_constraintVertical_bias="0.538" />
+
+    </ScrollView>
+
+    <RatingBar
+        android:id="@+id/ratingBeer"
+        style="@android:style/Widget.DeviceDefault.RatingBar"
+        android:layout_width="@dimen/widthRatingBar"
+        android:layout_height="@dimen/heightRatingBar"
+        android:layout_marginStart="@dimen/marginsBeer"
+        android:layout_marginTop="@dimen/marginTopRatBar"
+        android:layout_marginEnd="@dimen/marginsBeer"
+        android:layout_marginBottom="@dimen/marginBotRatBar"
+        android:numStars="5"
+        android:padding="4dp"
+        android:rating="0"
+        android:stepSize="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgRightButton"
+        app:layout_constraintStart_toEndOf="@+id/imgLeftButton"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewDesc" />
+
+    <ImageButton
+        android:id="@+id/returnMenu"
+        style="@style/RetButton"
+        android:layout_width="@dimen/widthRetArrow"
+        android:layout_height="@dimen/heightRetArrow"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/marginsBeer"
+        android:layout_marginTop="@dimen/marginTopRetArrowBeers"
+        android:layout_marginEnd="@dimen/marginsBeer"
+        android:fontFamily="casual"
+        android:onClick="returnMenu"
+        android:padding="@dimen/paddingRetArrow"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageBeer"
+        app:layout_constraintEnd_toStartOf="@+id/imageBeer"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

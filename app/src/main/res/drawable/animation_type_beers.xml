@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/beer_1"
+        android:duration="200" />
+
+    <item
+        android:drawable="@drawable/beer_2"
+        android:duration="200" />
+
+    <item
+        android:drawable="@drawable/beer_3"
+        android:duration="200" />
+
+    <item
+        android:drawable="@drawable/beer_4"
+        android:duration="200" />
+
+    <item
+        android:drawable="@drawable/beer_5"
+        android:duration="200" />
+
+    <item
+        android:drawable="@drawable/beer_6"
+        android:duration="200" />
+
+    <item
+        android:drawable="@drawable/beer_7"
+        android:duration="200" />
+
+    <item
+        android:drawable="@drawable/beer_8"
+        android:duration="200" />
+
+    <item
+        android:drawable="@drawable/beer_9"
+        android:duration="200" />
+
+    <item
+        android:drawable="@drawable/beer_10"
+        android:duration="200" />
+
+    <item
+        android:drawable="@drawable/beer_11"
+        android:duration="200" />
+
+
+</animation-list>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".activities.TypeActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStartTitle"
+        android:layout_marginTop="@dimen/marginTopTitle"
+        android:layout_marginEnd="@dimen/marginEndTitle"
+        android:fontFamily="casual"
+        android:text="TYPES OF BEERS"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sizeTitleTextTypes"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imgShowBy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/selectShowBeers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStartTitle"
+        android:layout_marginTop="@dimen/marginTopTypeText"
+        android:layout_marginEnd="@dimen/marginEndTitle"
+        android:fontFamily="casual"
+        android:onClick="goTypeBeers"
+        android:text="TYPE OF BEER"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sizeTextType"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imgRightButtonShowBy"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toEndOf="@+id/imgLeftButtonShowBy"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <ImageButton
+        android:id="@+id/imgLeftButtonShowBy"
+        style="@style/LeftButton"
+        android:layout_width="@dimen/sizeMovWid"
+        android:layout_height="@dimen/sizeMovHe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/marginStartArrowTypes"
+        android:layout_marginTop="@dimen/marginTopArrowTypes"
+        android:onClick="moveLeft"
+        app:layout_constraintBottom_toTopOf="@+id/imgShowBy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imgRightButtonShowBy"
+        style="@style/RightButton"
+        android:layout_width="@dimen/sizeMovWid"
+        android:layout_height="@dimen/sizeMovHe"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/marginTopArrowTypes"
+        android:layout_marginEnd="@dimen/marginEndArrowTypes"
+        android:onClick="moveRight"
+        app:layout_constraintBottom_toTopOf="@+id/imgShowBy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/returnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightButtonBack"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/buttonBackStart"
+        android:layout_marginEnd="@dimen/buttonBackEnd"
+        android:layout_marginBottom="@dimen/buttonBackBottom"
+        android:background="@drawable/my_button_bg"
+        android:drawableLeft="@drawable/ic_return"
+        android:fontFamily="casual"
+        android:onClick="returnMenu"
+        android:padding="@dimen/paddingButtonsMain"
+        android:text="@string/textBack"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/gifDrunken"
+        android:layout_width="@dimen/widthGifTypes"
+        android:layout_height="@dimen/heightGifTypes"
+        android:layout_marginStart="@dimen/paddingButtonsMain"
+        android:layout_marginTop="@dimen/paddingButtonsMain"
+        android:layout_marginEnd="@dimen/paddingButtonsMain"
+        android:layout_marginBottom="@dimen/paddingButtonsMain"
+        app:layout_constraintBottom_toTopOf="@+id/returnMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectShowBeers"
+        app:layout_constraintVertical_bias="0.546"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+</android.support.constraint.ConstraintLayout>
