@@ -1,4 +1,4 @@
-#Fun With Beer
+# Fun With Beer
 ## Getting Started
 
 This is a app that provide to you information about the different types of beers of each country. You can view the beer from different forms, you can see by type of beer or you can see by continent. The app tell you about the name, which beer is it, the degrees of it, in which cities is more common and a short description. After that, you can select the score of each beer you tried. This score is save in the case you want to try again, you can remember how it was. Also the app have the information about the most famous brands of beer around the world and a short description and their location in the case you want to see the main company.
@@ -26,11 +26,11 @@ and then check the checkbox and press 'Ok'. If you want to have the APK that can
 You only need to install the app in your device and have connection to Internet.
 Built With
 
-* [ANDROID] - The main language used.
-* [JAVA] - Language used.
-* [Google Maps API] - The API used for Google Maps.
-* [Web Service] - The server to storage the images.
-* [Picasso Library] - To show the images in the app.
+* [ANDROID](https://www.android.com/) - The main language used.
+* [JAVA](https://www.java.com/en/) - Language used.
+* [Google Maps API](https://cloud.google.com/maps-platform/?hl=en) - The API used for Google Maps.
+* [Web Service](https://www.000webhost.com/) - The server to storage the images.
+* [Picasso Library](http://square.github.io/picasso/) - To show the images in the app.
 
 ## Versioning
 
