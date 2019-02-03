@@ -1,9 +1,10 @@
 # Fun With Beer
+
 ## Getting Started
 
 This is a app that provide to you information about the different types of beers of each country. You can view the beer from different forms, you can see by type of beer or you can see by continent. The app tell you about the name, which beer is it, the degrees of it, in which cities is more common and a short description. After that, you can select the score of each beer you tried. This score is save in the case you want to try again, you can remember how it was. Also the app have the information about the most famous brands of beer around the world and a short description and their location in the case you want to see the main company.
 
-##Prerequisites
+## Prerequisites
 
 For run this project you will need a smartphone or a tablet.
 
