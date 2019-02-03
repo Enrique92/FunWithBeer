@@ -43,8 +43,9 @@ I used GitHub and GitKraken to have the project synchronize and not lose any inf
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
-Acknowledgments
+This project is licensed under the MIT License - see the LICENSE.md (https://github.com/Enrique92/FunWithBeer/blob/master/LICENSE.md) file for details
+
+## Acknowledgments
 
 * The love for beers.
 * The knowladge of Android give me the opportunity to build this app.
