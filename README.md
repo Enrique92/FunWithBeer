@@ -14,9 +14,7 @@ For run this project you will need a smartphone or a tablet.
 
 You need to have a enviroment like Android Studio and then download the project and open the main folder of the project. 
 When do did that you can connect your own device by USB or you can run a virtual device and then run the app. 
-When you connect your device with the PC your mobile will show you the USB debugging mode like these one -> [USB Debugging](https://i.stack.imgur.com/yyjkS.jpg)
-and then check the checkbox and press 'Ok'. If you want to have the APK that can be a easy way, you can find in this folder: 
-[APK](https://github.com/Enrique92/FunWithBeer/blob/master/app/release/FunWithBeer.apk) and then install and you can enjoy it!
+When you connect your device with the PC your mobile will show you the USB debugging mode like these one -> [USB Debugging](https://i.stack.imgur.com/yyjkS.jpg) and then check the checkbox and press 'Ok'. If you want to have the APK that can be a easy way, you can find in this folder -> [APK](https://github.com/Enrique92/FunWithBeer/blob/master/app/release/FunWithBeer.apk) and then install and you can enjoy it!
 
 ## Running the tests
 
