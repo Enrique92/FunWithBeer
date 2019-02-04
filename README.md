@@ -32,6 +32,7 @@ Built With
 * [Google Maps API](https://cloud.google.com/maps-platform/?hl=en) - The API used for Google Maps.
 * [Web Service](https://www.000webhost.com/) - The server to storage the images.
 * [Picasso Library](http://square.github.io/picasso/) - To show the images in the app.
+* [Database](https://www.sqlite.org/index.html) - SQLite for the Database.
 
 ## Versioning
 
